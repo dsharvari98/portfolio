@@ -252,6 +252,47 @@ img {
     color: var(--first-color);
 }
 
+.home__data .dynamic-txts {
+    height: 70px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    color: var(--second-color);
+    position: relative;
+    top: 0;
+    animation: slide 13s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--body-color);
+    border-left: 2px solid var(--first-color);
+    animation: typing 3s steps(25) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
 .home__social {
     display: flex;
     flex-direction: column;
