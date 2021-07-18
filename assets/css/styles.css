@@ -184,7 +184,7 @@ img {
 
 .nav__link {
     position: relative;
-    color: #fff;
+    color: var(--second-color);
 }
 
 .nav__link:hover {
